@@ -1,0 +1,29 @@
+{
+  "name": "bike-adventures",
+  "version": "1.0.0",
+  "description": "<<<<<<< HEAD # bike-adventures ======= # README",
+  "main": "index.js",
+  "directories": {
+    "test": "test",
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/9dreams-IFTS/bike-adventures.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/9dreams-IFTS/bike-adventures/issues"
+  },
+  "homepage": "https://github.com/9dreams-IFTS/bike-adventures#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^4.0.3"
+  }
+}
