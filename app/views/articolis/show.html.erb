@@ -1,0 +1,14 @@
+<% content_for :title, "Show prodotto" %>
+
+<div class="md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl">Show prodotto</h1>
+
+  <h2>Articoli del prodotto:</h2>
+  <ul>
+    <% @prodotto.articoli.each do |articolo| %>
+      <li><%= link_to articolo.titolo, articolo_path(articolo) %></li>
+    <% end %>
+  </ul>
+
+  <%= link_to "New articolo", new_prodotto_articolo_path(@prodotto), class: "rounded-md px-3.5 py-2.5 bg-blue-600 hover:bg-blue-500 text-white block font-medium" %>
+</div>

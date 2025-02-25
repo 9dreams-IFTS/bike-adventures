@@ -1,0 +1,47 @@
+<nav class="bg-white py-4 shadow-md">
+  <div class="container mx-auto flex items-center justify-between">
+    <div>
+      <%= link_to root_path do %>
+        <img src="https://www.creativefabrica.com/wp-content/uploads/2018/11/Bicycle-bike-logo-by-DEEMKA-STUDIO-1-580x406.jpg" alt="Bike Adventures Logo" class="h-16 w-auto">
+      <% end %>
+    </div>
+
+    <!-- Menu -->
+    <ul class="flex space-x-8 text-gray-700 font-roboto uppercase pr-64">
+      <li class="relative">
+        <span class="absolute top-[-14px] left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-bold px-2 py-[2px] rounded-full shadow-lg">
+          <%= @like_home %>
+        </span>
+        <%= link_to "Home", root_path, class: "relative block px-5 py-2 border-b-2 border-gray-900 text-center rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white" %>
+      </li>
+
+      <li class="relative">
+        <span class="absolute top-[-14px] left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-bold px-2 py-[2px] rounded-full shadow-lg">
+          <%= @like_gallery %>
+        </span>
+        <%= link_to "Galleria", gallery_path, class: "relative block px-5 py-2 border-b-2 border-gray-900 text-center rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white" %>
+      </li>
+
+      <li class="relative">
+        <span class="absolute top-[-14px] left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-bold px-2 py-[2px] rounded-full shadow-lg">
+          <%= @like_percorsi %>
+        </span>
+        <%= link_to "Percorsi", percorsi_path, class: "relative block px-5 py-2 border-b-2 border-gray-900 text-center rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white" %>
+      </li>
+
+      <li class="relative">
+        <span class="absolute top-[-14px] left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-bold px-2 py-[2px] rounded-full shadow-lg">
+          <%= @like_staff %>
+        </span>
+        <%= link_to "Chi siamo", chisiamo_path, class: "relative block px-5 py-2 border-b-2 border-gray-900 text-center rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white" %>
+      </li>
+      
+      <li class="relative">
+        <span class="absolute top-[-14px] left-1/2 transform -translate-x-1/2 bg-black text-white text-[10px] font-bold px-2 py-[2px] rounded-full shadow-lg">
+          <%= @like_prodotti %>
+        </span>
+        <%= link_to "Prodotti", prodotti_path, class: "relative block px-5 py-2 border-b-2 border-gray-900 text-center rounded-md transition-all duration-300 hover:bg-gray-900 hover:text-white" %>
+      </li>
+    </ul>
+  </div>
+</nav>
