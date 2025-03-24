@@ -65,6 +65,6 @@ class ArticolisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def articoli_params
-      params.expect(articoli: [ :titolo, :descrizione, :prezzo ])
+      params.expect(articoli: [ :titolo, :descrizione, :prezzo, :cover])
     end
 end

@@ -11,4 +11,9 @@
     <strong class="block font-medium mb-1">Prezzo:</strong>
     <%= articoli.prezzo %>
   </p>
+  <p>
+    <% if articoli.cover.attached? %>
+      <%= image_tag url_for(articoli.cover), class: 'w-100', style: 'max-width: 300px;' %>
+    <% end %>
+  </p>
 </div>
