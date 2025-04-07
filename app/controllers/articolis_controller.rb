@@ -1,4 +1,6 @@
 class ArticolisController < ApplicationController
+  before_action :set_channel, only: %i[ show edit update destroy]
+  before_action :authenticate_user!, except: %i[ show ]
   before_action :set_articoli, only: %i[ show edit update destroy ]
 
   # GET /articolis or /articolis.json
